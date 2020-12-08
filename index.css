@@ -1,0 +1,174 @@
+.rcorners2 {
+    border-radius: 25px;
+    text-align: center;
+    text-wrap: normal;
+    border: 8px double black;
+    padding: 10px;
+
+    margin-right: 10px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 4px 0 #a5a3a3;
+    box-shadow: 0 0 4px 0 #a5a3a3;
+}
+hr{
+    border: 1px double black;
+}
+.form-group{width: 500px}
+form{
+    margin-left: 10px;
+}
+.all_in_all{
+    text-align: center;
+    align-content: center;
+    margin-top: 10px;
+}
+.form_class{
+    display: flex;
+   overflow: auto;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    width: 50%;
+}
+.pizza{
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+}
+body{
+    overflow-x: hidden;
+}
+.rcorners2_product{
+    border-radius: 25px;
+    text-align: center;
+    word-wrap: break-word;
+    /*text-wrap: normal;*/
+    /*justify-content: center;*/
+    -webkit-text-size-adjust: auto;
+    border: 8px double black;
+   padding-top: 20px;
+    margin-right: 5px;
+    /*width: 400px;*/
+    height: 400px;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 4px 0 #a5a3a3; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+    box-shadow: 0 0 4px 0 #a5a3a3;
+}
+.sales_container{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    overflow-x: visible;
+    overflow-y: hidden;
+}
+
+@media screen and (max-width: 1280px){
+    /*.sales_container{*/
+    /*    display: inline-block;*/
+    /*    margin-top: 10px;*/
+    /*    justify-content: center;*/
+    /*    overflow-x: visible;*/
+    /*    overflow-y: hidden;*/
+    /*}*/
+
+}
+.grid {
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1vw;
+}
+.grid_el {
+    padding: .5em;
+    text-align: center;
+}
+
+/*For slideshow*/
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+
+    max-width: 1000px;
+    position: relative;
+   margin: auto;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 4s;
+    animation-name: fade;
+    animation-duration: 4s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
+
+/*input:invalid {*/
+/*    border: 2px solid red;*/
+/*}*/
+
+/*!*input:invalid:required {*!*/
+/*!*    background-image: linear-gradient(to right, pink, lightgreen);*!*/
+/*!*}*!*/
+
+/*input:valid {*/
+/*    border: 2px solid black;*/
+/*}*/
+.lds-dual-ring {
+    display: inline-block;
+    justify-self: center;
+    width: 80px;
+    height: 80px;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    justify-self: center;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #000000;
+    border-color: #000000 transparent #241f1f transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
