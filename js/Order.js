@@ -1,5 +1,5 @@
 // import {emailIsValid, isValidNumber, phonenumber} from "./Form.js";
-import tempDiv from "./MainPageFunctions.js";
+import {tempDiv} from "./MainPageFunctions.js";
 // import{clear} from "./MainPageFunctions.js";
 import {extracted} from "./Form.js";
 // import Router from "./Routing.js";

@@ -1,4 +1,4 @@
-
+import {order} from "./Order.js";
 import client from "./Client.js";
 import Router from "./Routing.js";
 import {showSlides} from "./Slider.js";
@@ -6,18 +6,17 @@ let tempDiv={
     temp_div:[]
 }
 function getProduct() {
-  return   {
+  return {
         price:"",
         url:"",
         id:""
     }
 }
 
-let product_array={
+let productArray={
     products:[]
 }
-export  {obj,getProducts,h}
-export default tempDiv
+
 let obj
 let h
 document.getElementById('temp').className = 'lds-dual-ring'
@@ -29,7 +28,7 @@ function buyProduct() {
     for (let i = 0; i < buyButtons.length; i++) {
         buyButtons[i].addEventListener('click', function () {
            console.log(i)
-            let product= getProduct()
+            const product= getProduct()
             count += 1
             let x=parseFloat(prices[i].innerHTML.substring(0, prices[i].innerHTML.indexOf('г')))
             price +=x
@@ -57,9 +56,9 @@ function buyProduct() {
             '    </div>\n' +
             '</div>'
 
-          product_array.products.push(product)
-           console.log(product_array.products)
-            localStorage.setItem('cart', JSON.stringify(product_array))
+          productArray.products.push(product)
+           console.log(productArray.products)
+            localStorage.setItem('cart', JSON.stringify(productArray))
 
         })
 
@@ -99,7 +98,7 @@ function forMainProducts(out) {
 }
 
 function getProducts() {
-   return  client.getData('products')
+   return client.getData('products')
         .then((out) => {
 
             let {divs, div} = forMainProducts(out);
@@ -232,48 +231,10 @@ function getProducts() {
 
         .catch(err => console.error(err));
 }
-
-    //     window.addEventListener('hashchange',function () {
-    //     Router.getState()
-    // })
-// let data=getData()
-    // .then(()=>{
-    //     document.getElementById('perform').addEventListener('click', function () {
-    //         // console.log(product.count)
-    //         if (product.count !== 0) {
-    //             const url = 'https://my-json-server.typicode.com/Maks-oss/LAB4_PetrukhnoM.R/orders'
-    //             try {
-    //                 var data;
-    //                 for (let j = 0; j < obj.length; j++) {
-    //                     // console.log(obj[j])
-    //                     if(product.url===obj[j].url)data=obj[j]
-    //                 }
-    //                 console.log(data)
-    //                 const response = fetch(url, {
-    //                     method: 'POST', // или 'PUT'
-    //                     body: data, // данные могут быть 'строкой' или {объектом}!
-    //                     // headers: {
-    //                     //     'Content-Type': 'application/json'
-    //                     // }
-    //                 });
-    //                 const json = response.json();
-    //                 console.log('Успех:', JSON.stringify(json));
-    //             } catch (error) {
-    //                 console.error('Ошибка:', error);
-    //                 console.log('ERROR')
-    //             }
-    //         } else {
-    //             alert('Пожалуйста выберите товар')
-    //         }
-    //     })
-    // })
 window.addEventListener('hashchange',function () {
     Router.getState()
     buyProduct();
 })
-
-
-
 
 function createDivForPizza(el){
     let div=document.createElement('div')
@@ -294,7 +255,8 @@ window.onload=function () {
     h=JSON.parse(localStorage.getItem('cart'))
      // console.log(h.products.length)
     if(h!==null){
-        let sum=0,count=0
+        let sum=0;
+        let count=0
         for (let i = 0; i < h.products.length; i++) {
             sum+=h.products[i].price
             count+=1
@@ -304,10 +266,10 @@ window.onload=function () {
 
     }
 }
-import {order} from "./Order.js";
+
 
 document.getElementById('order').addEventListener('click',function () {
     Router.add(order,'/order/1')
     window.location.hash='/order/1'
 })
-
+export {obj,getProducts,h,tempDiv}

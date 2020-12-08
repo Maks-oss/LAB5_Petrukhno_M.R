@@ -1,3 +1,5 @@
+import Router from "./Routing.js";
+import {getProducts} from "./MainPageFunctions.js";
 export function extracted() {
 
     let values = document.getElementsByClassName('form-control')
@@ -35,18 +37,15 @@ export function extracted() {
     return /\S+@\S+\.\S+/.test(email)
 }
 
- function phonenumber(inputtxt)
-{
+ function phonenumber(inputtxt) {
     let phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
     return phoneno.test(inputtxt);
-
 }
  function isValidNumber(number){
     let numbers = /^[0-9]+$/;
     return numbers.test(number)
 }
-import Router from "./Routing.js";
-import {getProducts} from "./MainPageFunctions.js";
+
 // import temp_div from "./MainPageFunctions.js";,product_array,obj
 // export let temp_div=[]
 document.getElementById('perform').addEventListener('click',function () {
@@ -165,10 +164,9 @@ document.getElementById('perform').addEventListener('click',function () {
 
             </div>
             <div id="main" class="row" style="margin-left:100px;">
-            </div>
-           
+            </div> 
         </div>`
-          let price=  document.getElementById('basic').innerHTML
+          let price=document.getElementById('basic').innerHTML
               .substring(document.getElementById('basic').innerHTML.indexOf(" ")+1,
                   document.getElementById('basic').innerHTML.length)
                 div.innerHTML+=

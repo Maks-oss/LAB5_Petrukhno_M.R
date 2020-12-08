@@ -1,25 +1,24 @@
 import templateProcessor from "./templateProcessor.js";
 import {showSlides} from "./Slider.js"
-// import {extracted} from "./Form.js";
 import {process} from "./Order.js";
 
-import tempDiv from "./MainPageFunctions.js";
-import{obj,h} from "./MainPageFunctions.js";
+import{obj,h,tempDiv} from "./MainPageFunctions.js";
 class Routing {
-    map =[]
-    routes=[]
+    map = []
+    routes = []
     add(view,link){
         this.routes.push(link)
         this.map.push(view)
         // console.log(this.routes[this.routes.length-1])
     }
+
     getState(){
         // console.log(this.map.length)
-        let a=window.location.hash.split("#")[1]
-        let pizza_matcher=a.substring(a.indexOf('_')+1,a.length)
-        // console.log(pizza_matcher)
-        let matches = a.match(/(\d+)/);
-        let x=matches===null?'':matches[0]
+        const a=window.location.hash.split("#")[1]
+        const pizzaMatcher=a.substring(a.indexOf('_')+1,a.length)
+        // console.log(pizzaMatcher)
+        const matches = a.match(/(\d+)/);
+        const x=matches===null?'':matches[0]
         switch (a){
             case '/catalog':
                 // document.getElementById('temp').className="row"
@@ -36,8 +35,8 @@ class Routing {
                 console.log('/action/'+matches[0])
                 templateProcessor.render(this.map[this.routes.indexOf('/action/'+matches[0])])
                 break;
-            case '/catalog/pizza_'+pizza_matcher:
-                templateProcessor.render(this.map[this.routes.indexOf('/catalog/pizza_'+pizza_matcher)])
+            case '/catalog/pizza_'+pizzaMatcher:
+                templateProcessor.render(this.map[this.routes.indexOf('/catalog/pizza_'+pizzaMatcher)])
                 break;
             case '/order':
                 templateProcessor.render(this.map[this.routes.lastIndexOf('/order')])
@@ -57,7 +56,7 @@ class Routing {
                     }
                 }
                 console.log(Array.from(document.getElementById('main').childNodes).length+" "+tempDiv.temp_div.length)
-                for (let  i = 0; i < tempDiv.temp_div.length; i++) {
+                for (let i = 0; i < tempDiv.temp_div.length; i++) {
                     document.getElementById('main').appendChild(tempDiv.temp_div[i])
                 }
                 break;

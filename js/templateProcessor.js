@@ -3,5 +3,5 @@ class TemplateProcessor {
         document.getElementById('temp').innerHTML=view.innerHTML
     }
 }
-let templateProcessor=new TemplateProcessor()
+const templateProcessor=new TemplateProcessor()
 export default templateProcessor

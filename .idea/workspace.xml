@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2b83ed05-2269-450f-a446-6cd201efb251" name="Default Changelist" comment="" />
+    <list default="true" id="2b83ed05-2269-450f-a446-6cd201efb251" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/LintValidator.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Client.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/MainPageFunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/MainPageFunctions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Routing.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Routing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/SalesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/SalesPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/templateProcessor.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/templateProcessor.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="package.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1lNRKdmmmddE3y9WRC4csBx40N2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -15,7 +37,10 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="15.2.1" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.10" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs.jest.jest_package" value="" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -27,13 +52,43 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/LAB5_Petrukhno M.R/index.html" useBuiltInWebServerPort="true">
+  <component name="RunManager" selected="JavaScript Debug.index.html">
+    <configuration name="adds 1 + 2 to equal 3" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/my.test.js" />
+      <test-names>
+        <test-name value="adds 1 + 2 to equal 3" />
+      </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/LAB5_Petrukhno M.R/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="Jest.adds 1 + 2 to equal 3" />
+      <item itemvalue="npm.build" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="Jest.adds 1 + 2 to equal 3" />
+        <item itemvalue="npm.build" />
       </list>
     </recent_temporary>
   </component>
@@ -45,7 +100,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607435502378</updated>
-      <workItem from="1607435505094" duration="977000" />
+      <workItem from="1607435505094" duration="7849000" />
     </task>
     <servers />
   </component>
@@ -53,9 +108,41 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="200" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607435616950">
+    <state x="200" y="98" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607451580468">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state x="200" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.828@0.23.1440.828" timestamp="1607435616950" />
+    <state x="200" y="98" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.828@0.23.1440.828" timestamp="1607451580468" />
+    <state x="451" y="245" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607451486627">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="451" y="245" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.828@0.23.1440.828" timestamp="1607451486627" />
+    <state x="379" y="239" key="FileDocumentManager.FileCacheConflict" timestamp="1607444752103">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="379" y="239" key="FileDocumentManager.FileCacheConflict/0.23.1440.828@0.23.1440.828" timestamp="1607444752103" />
+    <state x="569" y="340" key="Github.ShareDialog" timestamp="1607444308743">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="569" y="340" key="Github.ShareDialog/0.23.1440.828@0.23.1440.828" timestamp="1607444308743" />
+    <state x="481" y="148" key="Github.UntrackedFilesDialog" timestamp="1607444317630">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state x="481" y="148" key="Github.UntrackedFilesDialog/0.23.1440.828@0.23.1440.828" timestamp="1607444317630" />
+    <state width="1379" height="198" key="GridCell.Tab.0.bottom" timestamp="1607447297796">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="1379" height="198" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1607447297796" />
+    <state width="1379" height="198" key="GridCell.Tab.0.center" timestamp="1607447297795">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="1379" height="198" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1607447297795" />
+    <state width="1379" height="198" key="GridCell.Tab.0.left" timestamp="1607447297794">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="1379" height="198" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1607447297794" />
+    <state width="1379" height="198" key="GridCell.Tab.0.right" timestamp="1607447297795">
+      <screen x="0" y="23" width="1440" height="828" />
+    </state>
+    <state width="1379" height="198" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1607447297795" />
   </component>
 </project>
