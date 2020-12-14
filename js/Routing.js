@@ -1,7 +1,7 @@
 import templateProcessor from './templateProcessor.js'
-
-import {process} from './Order.js'
 import {obj,h,tempDiv,createElement} from './MainPageFunctions.js'
+import {process} from './Order.js'
+
 import showSlides from './Slider.js'
 
 class Routing {

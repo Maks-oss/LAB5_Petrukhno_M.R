@@ -13,6 +13,7 @@ export function process() {
     }
     if (!b) {
         alert('Введите поля')
+        return false
 
     } else {
         alert('Успех')
@@ -36,6 +37,6 @@ export function process() {
                 window.location.hash='/'
 
             })
-
+        return true
     }
 }

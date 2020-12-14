@@ -1,4 +1,5 @@
-let slideIndex = 0
+export let slideIndex = 0
+
 export default function showSlides() {
     let i
     const slides = document.getElementsByClassName('mySlides fade')
