@@ -1,11 +1,11 @@
-import Router from "./Routing.js";
-import {getProducts} from "./MainPageFunctions.js";
+import Router from './Routing.js'
+import {getProducts} from './MainPageFunctions.js'
 export function extracted() {
 
     let values = document.getElementsByClassName('form-control')
 
     if (!emailIsValid(values[0].value)) {
-        console.log(emailIsValid(values[0].value)+" "+phonenumber(values[2].value))
+        console.log(emailIsValid(values[0].value)+' '+phonenumber(values[2].value))
         document.getElementsByClassName('invalid-feedback')[0].style.display = 'initial'
         document.getElementsByClassName('invalid-feedback')[0].style.color = 'red'
     }
@@ -17,10 +17,10 @@ export function extracted() {
 
     let b=false
     for (let i = 0; i < 8; i++) {
-        if (values[i].value === "" || (i > 5 && !isValidNumber(values[i].value))) {
+        if (values[i].value === '' || (i > 5 && !isValidNumber(values[i].value))) {
             document.getElementsByClassName('invalid-feedback')[i].style.display = 'initial'
             document.getElementsByClassName('invalid-feedback')[i].style.color = 'red'
-        } else if(values[i].value !== "" && (i > 5 && isValidNumber(values[i].value))
+        } else if(values[i].value !== '' && (i > 5 && isValidNumber(values[i].value))
             &&(emailIsValid(values[0].value)&&phonenumber(values[2].value))) {
             b=true
             document.getElementsByClassName('invalid-feedback')[i].style.color = 'transparent'
@@ -33,27 +33,26 @@ export function extracted() {
         }
     }
 }
- function emailIsValid (email) {
+function emailIsValid (email) {
     return /\S+@\S+\.\S+/.test(email)
 }
 
- function phonenumber(inputtxt) {
-    let phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
-    return phoneno.test(inputtxt);
+function phonenumber(inputtxt) {
+    let phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
+    return phoneno.test(inputtxt)
 }
- function isValidNumber(number){
-    let numbers = /^[0-9]+$/;
+function isValidNumber(number){
+    let numbers = /^[0-9]+$/
     return numbers.test(number)
 }
 
-// import temp_div from "./MainPageFunctions.js";,product_array,obj
-// export let temp_div=[]
-document.getElementById('perform').addEventListener('click',function () {
-    getProducts()
-        .then(()=>{
-            // console.log(product.url)
-            let div=document.createElement('div')
-            div.innerHTML= `<div class="form_class">
+if(document.getElementById('perform')!==null) {
+    document.getElementById('perform').addEventListener('click', function () {
+        getProducts()
+            .then(() => {
+                // console.log(product.url)
+                let div = document.createElement('div')
+                div.innerHTML = `<div class="form_class">
             <div>
                 <h3 style="margin-left: 10px;margin-top: 10px">Контакты</h3>
                 <form class="needs-validation" noValidate>
@@ -166,15 +165,16 @@ document.getElementById('perform').addEventListener('click',function () {
             <div id="main" class="row" style="margin-left:100px;">
             </div> 
         </div>`
-          let price=document.getElementById('basic').innerHTML
-              .substring(document.getElementById('basic').innerHTML.indexOf(" ")+1,
-                  document.getElementById('basic').innerHTML.length)
-                div.innerHTML+=
-       ' <div class="all_in_all">'+
-            '<h4>'+ "Всего " +price+" грн"+'</h4>'+
-            '<button class="btn btn-primary" type="submit">'+"Подтвердить"+'</button>'+
-        '</div>'
-            Router.add(div,'/order')
-            window.location.hash='/order'
-        }).catch(err => console.error(err))
-})
+                let price = document.getElementById('basic').innerHTML
+                    .substring(document.getElementById('basic').innerHTML.indexOf(' ') + 1,
+                        document.getElementById('basic').innerHTML.length)
+                div.innerHTML +=
+                    ' <div class="all_in_all">' +
+                    '<h4>' + 'Всего ' + price + ' грн' + '</h4>' +
+                    '<button class="btn btn-primary" type="submit">' + 'Подтвердить' + '</button>' +
+                    '</div>'
+                Router.add(div.innerHTML, '/order')
+                window.location.hash = '/order'
+            }).catch(err => console.error(err))
+    })
+}

@@ -1,6 +1,6 @@
 class TemplateProcessor {
     render(view){
-        document.getElementById('temp').innerHTML=view.innerHTML
+        document.getElementById('temp').innerHTML=view
     }
 }
 const templateProcessor=new TemplateProcessor()

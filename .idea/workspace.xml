@@ -1,12 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b83ed05-2269-450f-a446-6cd201efb251" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LintValidator.png" afterDir="false" />
+    <list default="true" id="2b83ed05-2269-450f-a446-6cd201efb251" name="Default Changelist" comment="init">
+      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Client.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Routing.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/Client.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LintValidator.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Form.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/MainPageFunctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/MainPageFunctions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/Order.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Order.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/Routing.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Routing.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/SalesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/SalesPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/Slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/Slider.js" afterDir="false" />
@@ -20,8 +44,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="package.json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -40,8 +64,9 @@
     <property name="javascript.nodejs.core.library.configured.version" value="15.2.1" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.10" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="nodejs.jest.jest_package" value="" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -49,24 +74,64 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
-    <configuration name="adds 1 + 2 to equal 3" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="npm.build">
+    <configuration name="Routing between pages" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
-      <jest-package value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/my.test.js" />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/tests/Routing.test.js" />
       <test-names>
-        <test-name value="adds 1 + 2 to equal 3" />
+        <test-name value="Routing between pages" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" engineId="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" uri="http://localhost:63342/LAB5_Petrukhno M.R/index.html" useBuiltInWebServerPort="true">
+    <configuration name="Routing between pages.should route to ActionPage" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/Routing.test.js" />
+      <test-names>
+        <test-name value="Routing between pages" />
+        <test-name value="should route to ActionPage" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Routing between pages.should route to mainPage" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/Routing.test.js" />
+      <test-names>
+        <test-name value="Routing between pages" />
+        <test-name value="should route to mainPage" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Routing between pages.should route to productPage" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/Routing.test.js" />
+      <test-names>
+        <test-name value="Routing between pages" />
+        <test-name value="should route to productPage" />
+      </test-names>
       <method v="2" />
     </configuration>
     <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -80,15 +145,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JavaScript Debug.index.html" />
-      <item itemvalue="Jest.adds 1 + 2 to equal 3" />
+      <item itemvalue="Jest.Routing between pages" />
+      <item itemvalue="Jest.Routing between pages.should route to mainPage" />
+      <item itemvalue="Jest.Routing between pages.should route to productPage" />
+      <item itemvalue="Jest.Routing between pages.should route to ActionPage" />
       <item itemvalue="npm.build" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index.html" />
-        <item itemvalue="Jest.adds 1 + 2 to equal 3" />
         <item itemvalue="npm.build" />
+        <item itemvalue="Jest.Routing between pages" />
+        <item itemvalue="Jest.Routing between pages.should route to ActionPage" />
+        <item itemvalue="Jest.Routing between pages.should route to productPage" />
+        <item itemvalue="Jest.Routing between pages.should route to mainPage" />
       </list>
     </recent_temporary>
   </component>
@@ -100,22 +169,48 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607435502378</updated>
-      <workItem from="1607435505094" duration="7849000" />
+      <workItem from="1607435505094" duration="24108000" />
+      <workItem from="1607882676568" duration="11854000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1607451808753</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607451808753</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="200" y="98" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607451580468">
-      <screen x="0" y="23" width="1440" height="828" />
+    <state x="200" y="98" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607906699008">
+      <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state x="200" y="98" width="1071" height="724" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.828@0.23.1440.828" timestamp="1607451580468" />
-    <state x="451" y="245" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607451486627">
-      <screen x="0" y="23" width="1440" height="828" />
+    <state x="200" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.830@0.23.1440.830" timestamp="1607906699008" />
+    <state x="451" y="246" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607902036881">
+      <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state x="451" y="245" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.828@0.23.1440.828" timestamp="1607451486627" />
+    <state x="451" y="246" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.830@0.23.1440.830" timestamp="1607902036881" />
     <state x="379" y="239" key="FileDocumentManager.FileCacheConflict" timestamp="1607444752103">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
@@ -128,21 +223,128 @@
       <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="481" y="148" key="Github.UntrackedFilesDialog/0.23.1440.828@0.23.1440.828" timestamp="1607444317630" />
-    <state width="1379" height="198" key="GridCell.Tab.0.bottom" timestamp="1607447297796">
+    <state width="1379" height="242" key="GridCell.Tab.0.bottom" timestamp="1607907221260">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1379" height="248" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1607522920186" />
+    <state width="1379" height="242" key="GridCell.Tab.0.bottom/0.23.1440.830@0.23.1440.830" timestamp="1607907221260" />
+    <state width="1379" height="242" key="GridCell.Tab.0.center" timestamp="1607907221258">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1379" height="248" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1607522920185" />
+    <state width="1379" height="242" key="GridCell.Tab.0.center/0.23.1440.830@0.23.1440.830" timestamp="1607907221258" />
+    <state width="1379" height="242" key="GridCell.Tab.0.left" timestamp="1607907221256">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1379" height="248" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1607522920185" />
+    <state width="1379" height="242" key="GridCell.Tab.0.left/0.23.1440.830@0.23.1440.830" timestamp="1607907221256" />
+    <state width="1379" height="242" key="GridCell.Tab.0.right" timestamp="1607907221259">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1379" height="248" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1607522920186" />
+    <state width="1379" height="242" key="GridCell.Tab.0.right/0.23.1440.830@0.23.1440.830" timestamp="1607907221259" />
+    <state width="1379" height="248" key="GridCell.Tab.1.bottom" timestamp="1607905901280">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1379" height="248" key="GridCell.Tab.1.bottom/0.23.1440.828@0.23.1440.828" timestamp="1607522920187" />
+    <state width="1379" height="248" key="GridCell.Tab.1.bottom/0.23.1440.830@0.23.1440.830" timestamp="1607905901280" />
+    <state width="1379" height="248" key="GridCell.Tab.1.center" timestamp="1607905901280">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1379" height="248" key="GridCell.Tab.1.center/0.23.1440.828@0.23.1440.828" timestamp="1607522920186" />
+    <state width="1379" height="248" key="GridCell.Tab.1.center/0.23.1440.830@0.23.1440.830" timestamp="1607905901280" />
+    <state width="1379" height="248" key="GridCell.Tab.1.left" timestamp="1607905901279">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1379" height="248" key="GridCell.Tab.1.left/0.23.1440.828@0.23.1440.828" timestamp="1607522920186" />
+    <state width="1379" height="248" key="GridCell.Tab.1.left/0.23.1440.830@0.23.1440.830" timestamp="1607905901279" />
+    <state width="1379" height="248" key="GridCell.Tab.1.right" timestamp="1607905901280">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1379" height="248" key="GridCell.Tab.1.right/0.23.1440.828@0.23.1440.828" timestamp="1607522920187" />
+    <state width="1379" height="248" key="GridCell.Tab.1.right/0.23.1440.830@0.23.1440.830" timestamp="1607905901280" />
+    <state width="1379" height="248" key="GridCell.Tab.2.bottom" timestamp="1607905901281">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1379" height="248" key="GridCell.Tab.2.bottom/0.23.1440.828@0.23.1440.828" timestamp="1607522920188" />
+    <state width="1379" height="248" key="GridCell.Tab.2.bottom/0.23.1440.830@0.23.1440.830" timestamp="1607905901281" />
+    <state width="1379" height="248" key="GridCell.Tab.2.center" timestamp="1607905901281">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1379" height="248" key="GridCell.Tab.2.center/0.23.1440.828@0.23.1440.828" timestamp="1607522920187" />
+    <state width="1379" height="248" key="GridCell.Tab.2.center/0.23.1440.830@0.23.1440.830" timestamp="1607905901281" />
+    <state width="1379" height="248" key="GridCell.Tab.2.left" timestamp="1607905901281">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1379" height="248" key="GridCell.Tab.2.left/0.23.1440.828@0.23.1440.828" timestamp="1607522920187" />
+    <state width="1379" height="248" key="GridCell.Tab.2.left/0.23.1440.830@0.23.1440.830" timestamp="1607905901281" />
+    <state width="1379" height="248" key="GridCell.Tab.2.right" timestamp="1607905901281">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1379" height="248" key="GridCell.Tab.2.right/0.23.1440.828@0.23.1440.828" timestamp="1607522920188" />
+    <state width="1379" height="248" key="GridCell.Tab.2.right/0.23.1440.830@0.23.1440.830" timestamp="1607905901281" />
+    <state width="1379" height="248" key="GridCell.Tab.3.bottom" timestamp="1607905901283">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1379" height="248" key="GridCell.Tab.3.bottom/0.23.1440.828@0.23.1440.828" timestamp="1607522920189" />
+    <state width="1379" height="248" key="GridCell.Tab.3.bottom/0.23.1440.830@0.23.1440.830" timestamp="1607905901283" />
+    <state width="1379" height="248" key="GridCell.Tab.3.center" timestamp="1607905901282">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1379" height="248" key="GridCell.Tab.3.center/0.23.1440.828@0.23.1440.828" timestamp="1607522920188" />
+    <state width="1379" height="248" key="GridCell.Tab.3.center/0.23.1440.830@0.23.1440.830" timestamp="1607905901282" />
+    <state width="1379" height="248" key="GridCell.Tab.3.left" timestamp="1607905901282">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1379" height="248" key="GridCell.Tab.3.left/0.23.1440.828@0.23.1440.828" timestamp="1607522920188" />
+    <state width="1379" height="248" key="GridCell.Tab.3.left/0.23.1440.830@0.23.1440.830" timestamp="1607905901282" />
+    <state width="1379" height="248" key="GridCell.Tab.3.right" timestamp="1607905901282">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state width="1379" height="248" key="GridCell.Tab.3.right/0.23.1440.828@0.23.1440.828" timestamp="1607522920189" />
+    <state width="1379" height="248" key="GridCell.Tab.3.right/0.23.1440.830@0.23.1440.830" timestamp="1607905901282" />
+    <state x="328" y="175" key="IDE.errors.dialog" timestamp="1607907185678">
+      <screen x="0" y="23" width="1440" height="830" />
+    </state>
+    <state x="328" y="175" key="IDE.errors.dialog/0.23.1440.830@0.23.1440.830" timestamp="1607907185678" />
+    <state x="336" y="176" key="Vcs.Push.Dialog.v2" timestamp="1607451819300">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1379" height="198" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1607447297796" />
-    <state width="1379" height="198" key="GridCell.Tab.0.center" timestamp="1607447297795">
+    <state x="336" y="176" key="Vcs.Push.Dialog.v2/0.23.1440.828@0.23.1440.828" timestamp="1607451819300" />
+    <state x="479" y="177" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1607451784906">
       <screen x="0" y="23" width="1440" height="828" />
     </state>
-    <state width="1379" height="198" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1607447297795" />
-    <state width="1379" height="198" key="GridCell.Tab.0.left" timestamp="1607447297794">
-      <screen x="0" y="23" width="1440" height="828" />
+    <state x="479" y="177" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog/0.23.1440.828@0.23.1440.828" timestamp="1607451784906" />
+    <state x="620" y="164" width="670" height="676" key="search.everywhere.popup" timestamp="1607901188681">
+      <screen x="0" y="23" width="1440" height="830" />
     </state>
-    <state width="1379" height="198" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1607447297794" />
-    <state width="1379" height="198" key="GridCell.Tab.0.right" timestamp="1607447297795">
-      <screen x="0" y="23" width="1440" height="828" />
-    </state>
-    <state width="1379" height="198" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1607447297795" />
+    <state x="620" y="164" width="670" height="676" key="search.everywhere.popup/0.23.1440.830@0.23.1440.830" timestamp="1607901188681" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/tests/Routing.test.js</url>
+          <line>6</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/tests/Routing.test.js</url>
+          <line>9</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JavaScriptTestRunnerJest">
+        <watch expression="this.routes" language="JavaScript" />
+        <watch expression="this.map" language="JavaScript" />
+        <watch expression="client" language="JavaScript" />
+        <watch expression="res" language="JavaScript" />
+        <watch expression="res.default.getData('products').then(data=&gt;console.log(data))" language="JavaScript" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

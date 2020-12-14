@@ -1,19 +1,23 @@
-let slideIndex = 0;
-export function showSlides() {
-    let i;
-    const slides = document.getElementsByClassName("mySlides fade");
-    const dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+let slideIndex = 0
+export default function showSlides() {
+    let i
+    const slides = document.getElementsByClassName('mySlides fade')
+    if(slides.length!==0) {
+        const dots = document.getElementsByClassName('dot')
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none'
+        }
+        slideIndex++
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(' active', '')
+        }
+
+        slides[slideIndex - 1].style.display = 'block'
+        dots[slideIndex - 1].className += ' active'
+        setTimeout(showSlides, 4000)
     }
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    setTimeout(showSlides, 4000);
+
 }
